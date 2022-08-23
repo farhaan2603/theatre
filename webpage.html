@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>THEATER.COM</title>
+    <link rel = "icon" type = "image/png" href = "images/star.png">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+
+     <!-- Google Fonts -->
+     <link href="https://fonts.googleapis.com/
+     css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+     
+       <!-- Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <style>
+    .card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.btn-primary {
+  /* * Add shadows to create the "card" effect */ 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+.checked {
+            color : yellow;
+            font-size : 20px;
+        }
+        .unchecked {
+            font-size : 20px;
+        }
+
+        .h1-tag{
+    text-align: center;
+    margin-top: 4%;
+}
+.form-content-section{
+    width: 50%;
+    margin-top: 3%;
+    margin-left: 25%;
+}
+@media screen and (max-width: 600px){
+    .form-content-section{
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .form-content-section{
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .form-group{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .btn-primary{
+        margin-left: 10px;
+    }
+}
+    .btn-primary{
+        margin-left: 20px;
+    }
+
+.myclass{
+    border-radius: 20px;
+}
+.checked {
+  color: orange;
+}
+footer {
+        width: 100%;
+        background-color: #212529;
+        color: white;
+        text-align: center;
+    }
+    .footer-list{
+      text-align: left;
+      text-decoration: none;
+      list-style: none;
+    }
+    .footer-list li {
+      padding-top: 5px;
+
+    }
+	  h2{font-family:pt-serif; 
+	  color:white;
+	  }
+	  </style>
+  <body style="background-color:darkslategrey;">
+
+    <!-- RSPONSIVE NAVBAR AND SEARCH BTN -->
+    
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="images/theatre_com_logo.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="webpage.html">Theatre</a>
+              </li>
+                        <a class="nav-link" href="detailed page.html">Detailed & Awards</a>
+              </li>
+			  <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Artist Gallery</a>
+				   <li class="nav-item">
+                
+					   <a class="nav-link" href="events.html">Auditorium & Events</a></li>
+           
+            </ul>
+			
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info my-2 my-sm-0" type="submit"> SEARCH</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+              <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+            </ol>
+
+            <!-- SLIDER BANNER -->
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/spider-man-ffh-banner.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>SPIDERMAN NO WAY HOME</h5>
+                  <p>HOLLYWOOD MOVIE</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/k.g.f.jpg"> 
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>K.G.F</h5>
+                  <p>BOLLYWOOD MOVIE</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/parwaz hai junnon.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>PARVAZ HY JUNOON</h5>
+                  <p>LOLLYWOOD MOVIE</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+   
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+<h2 class="text-center">ENGLISH THEATRE SHOWS</h2>
+    <hr>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/avengers.jpg" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Avengers 4</h5>
+				<h6>from <b>2000 PKR</b></h6>
+              <p class="card-text"></p>
+              <a href="detailed page.html" class="btn btn-primary">FIND TICKET</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/jarwa tribes.webp" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Jarwa Tribes</h5>
+              <h6>from <b>1500 PKR</b></h6>
+              <a href="gallery.html" class="btn btn-primary">FIND TICKET</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/nun.webp" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Course of nun</h5>
+              <h6>from <b>1500 PKR</b></h6>
+              <a href="detailed page.html" class="btn btn-primary">FIND TICKET</a>
+            </div>
+          </div>
+        </div>
+      </div>
+		<br>
+		<h2 class="text-center">HINDI THEATRE MOVIES</h2>
+		</br>
+      <div class="row text-center mt-4">
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/atBgLfwxFERXExObsqK1jFoCTZ.jpg" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Commando</h5>
+              <h6>from <b>1200 PKR</b></h6>
+              <a href="gallery.html" class="btn btn-primary">Find Ticket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/Baaghi3.jpg" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Baaghi 3</h5>
+              <h6>from <b>1300 PKR</b></h6>
+              <a href="gallery.html" class="btn btn-primary">Find Ticket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/Raees-Shah-Rukh-Khan-Bollywood-Movies-Poster.jpg" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Raees</h5>
+             <h6>from <b>1600 PKR</b></h6>
+              <a href="detailed page.html" class="btn btn-primary">Find Ticket</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+<h2 class="text-center">PAKISTANI THEATRE MOVIES</h2>
+		</br>
+      <div class="row text-center mt-4">
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/rehbra.jpg" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Rehbra</h5>
+             <h6>from <b>1199 PKR</b></h6>
+              <a href="gallery.html" class="btn btn-primary">Find Ticket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/khel khel.jpg" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Khel Khel Mein</h5>
+           <h6>from <b>1700 PKR</b></h6>
+              <a href="detailed page.html" class="btn btn-primary">Find Ticket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/jalaibee-pakistani-movie-poster.jpg" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Jalaibee</h5>
+              <h6>from <b>999 PKR</b></h6>
+              <a href="gallery.html" class="btn btn-primary">Find Ticket</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+<h2 class="text-center">Tv Shows</h2>
+		</br>
+      <div class="row text-center mt-4">
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/high school musical.webp" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">High School MUsical</h5>
+              <h6>from <b>2200 PKR</b></h6>
+              <a href="detailed page.html" class="btn btn-primary">Find TIcket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/naruto.jpg" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Naruto</h5>
+              <h6>from <b>1700 PKR</b></h6>
+              <a href="gallery.html" class="btn btn-primary">Find Ticket</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pb-1 pb-md-0">
+          <div class="card">
+            <img class="card-img-top" src="images/lucifer.jpg" alt="Card image cap" height="379px">
+            <div class="card-body">
+              <h5 class="card-title">Lucifer</h5>
+              <h6>from <b>2500 PKR</b></h6>
+              <a href="gallery.html" class="btn btn-primary">Find Ticket</a>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <hr>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="file:///C|/Users/lab-105/Documents/js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="file:///C|/Users/lab-105/Documents/js/popper.min.js"></script>
+    <script src="file:///C|/Users/lab-105/Documents/js/bootstrap-4.4.1.js"></script>
+    
+     <!-- FEEDBACK SECTION -->
+
+    <section id="form-section" style="background-color: rgb(219, 218, 218);">
+      <h1 class="h1-tag">Your Feedback Is important For Us</h1>
+     <div class="rating" style="text-align: center;">
+      <h5>Rate Us</h5>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star"></span>
+     <span class="fa fa-star"></span>
+    </div>
+
+      <form class="form-content-section" >
+          <div class="form-group">
+              <label for="exampleInputText"><b>Name</b></label>
+              <input type="text" class="form-control" 
+               id="exampleInputText" placeholder="Enter Your Name">
+          </div>
+          <div class="form-group">
+              <label for="exampleInputEmail1"><b>Email address</b></label>
+              <input type="email" class="form-control" 
+            id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted"></small>
+          </div>
+          <div class="form-group">
+              <label for="exampleInputText"><b>Contact Number(Optional)</b></label>
+              <input type="text" class="form-control" 
+            id="exampleInputText">
+          </div>
+          <div class="form-group">
+              <label for="exampleFormControlTextarea1"><b>Feedback</b></label>
+              <textarea class="form-control" 
+            id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary myclass" style="margin-bottom: 12px;margin-left: 260px">Submit</button>
+      </form>
+  </section>
+  <footer>
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="footer-list">
+       <li>ABOUT US</li>
+        <li>INFO</li>
+        <li>SERVICES</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="footer-list">
+        <li>HELP</li>
+        <li>FAQ's</li>
+        <li>CONTACT US</li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul class="footer-list">
+        <li>TERMS AND CONDITION</li>
+        <li>PRIVACY POLICY</li>
+        <li><p>©copyright 2022 theatre.com ®register.</p></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
